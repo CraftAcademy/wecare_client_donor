@@ -13,7 +13,7 @@ import FoodBagServices from '../modules/FoodBagServices'
 
 const CreateFoodBagForm = () => {
   const dispatch = useDispatch()
-  const { createFoodBagMessage, errorMessage } = useSelector((state) => state)
+  const { createFoodBagMessage, errorMessage } = useSelector(state => state)
 
   return (
     <Container
@@ -37,11 +37,12 @@ const CreateFoodBagForm = () => {
             marginTop: '0.1em',
             marginBottom: '0.2em',
             marginLeft: '2em',
+            color: '#9370db',
           }}
         />
         <Form
           data-cy='foodbag-form'
-          onSubmit={(event) => FoodBagServices.create(event, dispatch)}
+          onSubmit={event => FoodBagServices.create(event, dispatch)}
         >
           <Form.Field />
           <Form.Field style={{ width: 400 }}>
@@ -60,12 +61,14 @@ const CreateFoodBagForm = () => {
           <Button
             data-cy='submit-btn'
             type='submit'
-            color='purple'
             icon='heart'
+            size='huge'
             style={{
               marginTop: '0.5em',
               marginBottom: '0.2em',
-              marginLeft: '6em',
+              marginLeft: '3em',
+              backgroundColor: '#6699FF',
+              color: 'white',
             }}
           >
             <Icon name='heart'></Icon>
