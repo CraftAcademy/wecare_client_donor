@@ -8,10 +8,11 @@ const ProfileServices = {
 
     let headers = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY))
     let encodedImage
-      if (event.target.image.files[0]) {
-        encodedImage = await toBase64(event.target.image.files[0])
+    if (event.target.image.files[0]) {
+      encodedImage = await toBase64(event.target.image.files[0])
+      debugger
       }
-    
+    // debugger
       let response = await axios.put(
         `/user/${currentUser.id}`,
         {
@@ -25,6 +26,7 @@ const ProfileServices = {
           headers: headers,
         }
       )
+    // debugger
       event.target.reset()
       if (response.status === 200) {
         dispatch({
