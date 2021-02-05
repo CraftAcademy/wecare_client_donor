@@ -71,7 +71,6 @@ const CreateFoodBagForm = () => {
             <Icon name='heart'></Icon>
             Donate
           </Button>
-          
           {createFoodBagMessage && (
             <Message
               color='green'

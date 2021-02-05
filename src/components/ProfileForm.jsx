@@ -1,25 +1,35 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Form, Button, Input, Message, Container, Segment, Header } from 'semantic-ui-react'
+import {
+  Form,
+  Button,
+  Input,
+  Message,
+  Container,
+  Segment,
+  Header,
+} from 'semantic-ui-react'
 import ProfileServices from '../modules/ProfileServices'
 import { NavLink } from 'react-router-dom'
 
 const ProfileForm = () => {
-
   const dispatch = useDispatch()
-  const updateProfileMessage = useSelector((state) => state.updateProfileMessage)
-  const currentUser = useSelector(state => state.currentUser)
+  const updateProfileMessage = useSelector(
+    (state) => state.updateProfileMessage
+  )
+  const currentUser = useSelector((state) => state.currentUser)
   return (
     <Container style={{ paddingBottom: 80 }}>
       <Segment>
-        <Button data-cy='back-btn' fluid as={NavLink}
-          to={`/foodbags`}>
+        <Button data-cy='back-btn' fluid as={NavLink} to={`/foodbags`}>
           Back
-    </Button>
+        </Button>
         <Header as='h3'>Update your Profile</Header>
         <Form
           data-cy='profile-form'
-          onSubmit={(event) => ProfileServices.update(event, currentUser, dispatch)}
+          onSubmit={(event) =>
+            ProfileServices.update(event, currentUser, dispatch)
+          }
         >
           <Form.Field
             data-cy='company-name'
@@ -58,7 +68,7 @@ const ProfileForm = () => {
           />
           <Button data-cy='submit-btn' type='save' color='pink' value='save'>
             Save
-      </Button>
+          </Button>
           {updateProfileMessage && (
             <Message
               color='green'
@@ -71,10 +81,7 @@ const ProfileForm = () => {
         </Form>
       </Segment>
     </Container>
-
   )
 }
-
-
 
 export default ProfileForm
