@@ -26,12 +26,10 @@ p {
 
 footer {
   padding-top: 10px;
-  background-color: #ebd2be;
-  position: fixed;
-  text-align: center;
+  position: absolute;
   z-index: 999;
-  width: 100%;
-  height: 40px;
-  bottom:0;
+  width: 150%;
+  height: 400px;
   font-size: 15px;
+  background-repeat: "no-repeat";
 }

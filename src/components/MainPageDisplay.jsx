@@ -60,7 +60,7 @@ const MainPageDisplay = () => {
               </p>
             </Grid.Column>
 
-            <Grid.Column width={3}>
+            {/* <Grid.Column width={3}>
               <Header
                 as='h4'
                 floated='right'
@@ -74,7 +74,7 @@ const MainPageDisplay = () => {
               <Image src='./img/donor1.png' />
               <Image src='./img/donor2.png' />
               <Image src='./img/donor3.png' />
-            </Grid.Column>
+            </Grid.Column> */}
           </Grid.Row>
         </Grid>
       </Container>

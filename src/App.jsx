@@ -8,16 +8,26 @@ import { Switch, Route } from 'react-router-dom'
 import ProfileForm from './components/ProfileForm'
 
 const App = () => {
-
   return (
     <>
       <Suspense fallback={<h3>Loading...</h3>}>
+        <div
+          style={{
+            background: 'url("../img/wecarebackground.jpg")',
+            backgroundSize: 'cover',
+            height: '120vh',
+            maxWidth: 'auto',
+            flex:1
+          }}
+        ></div>
         <MenuHeader />
+        
         <Switch>
-          <Route exact path="/" component={MainPageDisplay}></Route>
-          <Route exact path="/foodbags" component={CreateFoodBagForm}></Route>
-          <Route exact path="/profile" component={ProfileForm}></Route>
+          <Route exact path='/' component={MainPageDisplay}></Route>
+          <Route exact path='/foodbags' component={CreateFoodBagForm}></Route>
+          <Route exact path='/profile' component={ProfileForm}></Route>
         </Switch>
+        <br/>
         <Footer />
       </Suspense>
     </>
