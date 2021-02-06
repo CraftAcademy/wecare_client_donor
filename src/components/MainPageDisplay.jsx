@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Redirect } from 'react-router-dom'
-import { Container, Grid, Header, Image } from 'semantic-ui-react'
+import { Container, Grid, Header } from 'semantic-ui-react'
 
 const MainPageDisplay = () => {
   const credentials = useSelector((state) => state.credentials)
