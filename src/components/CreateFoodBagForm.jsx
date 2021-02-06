@@ -19,7 +19,7 @@ const CreateFoodBagForm = () => {
     <Container
       style={{
         marginTop: '0.5em',
-        marginBottom: '0.2em',
+        marginBottom: '11em',
         marginLeft: '0.2em',
       }}
     >
