@@ -28,8 +28,9 @@ footer {
   padding-top: 10px;
   position: absolute;
   z-index: 999;
-  width: 150%;
+  width: 200%;
   height: 400px;
   font-size: 15px;
   background-repeat: "no-repeat";
+  padding-left: 50px;
 }
