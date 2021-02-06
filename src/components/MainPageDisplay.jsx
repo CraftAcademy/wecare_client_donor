@@ -51,11 +51,11 @@ const MainPageDisplay = () => {
                 stores that have available food bags and make a reservation and
                 then go to the store and pick it up.
                 <br></br>
-                <br></br>By registering at weCare you as a store can help not
+                {/* <br></br>By registering at weCare you as a store can help not
                 only families all over Sweden but also make a huge impact on the
                 environment. By reducing food waste we can together stop the
                 rapid climate change that is happening right now.
-                <br></br>
+                <br></br> */}
                 <br></br>So sign up today, to make a better tomorrow!
               </p>
             </Grid.Column>

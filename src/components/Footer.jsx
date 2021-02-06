@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image } from 'semantic-ui-react'
-import footer from '../assets/footer2.jpg'
+import footer from '../assets/footer.jpg'
 
 const Footer = () => {
   return (
