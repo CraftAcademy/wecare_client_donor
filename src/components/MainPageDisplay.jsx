@@ -1,10 +1,10 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Redirect } from 'react-router-dom'
-import { Container, Grid, Header, Image } from 'semantic-ui-react'
+import { Container, Grid, Header } from 'semantic-ui-react'
 
 const MainPageDisplay = () => {
-  const credentials = useSelector(state => state.credentials)
+  const credentials = useSelector((state) => state.credentials)
   return (
     <>
       {credentials === true && <Redirect to='/foodbags' />}
@@ -60,7 +60,7 @@ const MainPageDisplay = () => {
               </p>
             </Grid.Column>
 
-            <Grid.Column width={3}>
+            {/* <Grid.Column width={3}>
               <Header
                 as='h4'
                 floated='right'
@@ -74,7 +74,7 @@ const MainPageDisplay = () => {
               <Image src='./img/donor1.png' />
               <Image src='./img/donor2.png' />
               <Image src='./img/donor3.png' />
-            </Grid.Column>
+            </Grid.Column> */}
           </Grid.Row>
         </Grid>
       </Container>
